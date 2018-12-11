@@ -13,6 +13,7 @@
         <script src="js/myjs.js"></script>
     </head>
     <body>
+<<<<<<< HEAD
 <div class="container">
 <div class="row">
     <div class="col-md-6">
@@ -23,6 +24,29 @@
             <div class="panel-heading">
                 <div class="col-md-6">
                     <img src="assets/security-icon.png" class="img img-responsive img-thumbnail">
+        <div class="flex-center position-ref full-height">
+            @if (Route::has('login'))
+                <div class="top-right links">
+                    @if (Auth::check())
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ url('/login') }}">Login</a>
+                        <a href="{{ url('/register') }}">Register</a>
+                    @endif
+                </div>
+            @endif
+
+            <div class="content">
+               <!--  <div class="title m-b-md">
+                    SHAIRAAAA
+                </div> -->
+
+                <div class="links">
+                    <a href="https://laravel.com/docs">Documentation</a>
+                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel-news.com">News</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
                 <h5> User Login </h5>
             </div>
